@@ -1,0 +1,225 @@
+:root {
+  --color-neutral-100: #312D64;
+  --color-neutral-200: #343193;
+  --color-purple: #B52184;
+  --color-white-100: #FFF;
+  --color-white-200: #F9F4FB;
+
+  font-size: 62.5%;
+}
+
+* {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  background-color: var(--color-white-200);
+  text-align: center;
+}
+
+.heading-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.7rem;
+  padding-bottom: 9.3rem;
+}
+
+.heading-wrapper > a {
+  margin-top: 3.45rem;
+}
+
+h1, h2 {
+  color: var(--color-purple);
+  font-size: 3.2rem;
+  font-weight: 800;
+}
+
+.heading-wrapper > p {
+  color: var(--color-neutral-100);
+  font-size: 2rem;
+  font-family: 600;
+}
+
+.header-wrapper > a {
+  display: block;
+  padding-bottom: 9.3rem;
+}
+
+.main-wrapper {
+  background: linear-gradient(145deg, var(--color-neutral-200), var(--color-neutral-100));
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5.4rem 0;
+}
+
+.card {
+  background-color: var(--color-white-100);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2.65rem 6rem 2.65rem 2.65rem;
+  width: 35.2rem;
+}
+
+h3 {
+  color: var(--color-purple);
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 3.3rem 0 2rem 0;
+}
+
+.card > p {
+  color: var(--color-neutral-100);
+  font-weight: 600;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 7.8rem auto 6.5rem auto;
+  width: 35.2rem;
+}
+
+.contact > h2 {
+  margin-bottom: 1.9rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+input {
+  border: 1.5px solid var(--color-neutral-100);
+  border-radius: 1.6rem;
+  box-sizing: border-box;
+  color: black;
+  height: 4.8rem;
+  padding-left: 5rem;
+  width: 100%;
+}
+
+#name {
+  background: url('./assets/person.svg') no-repeat;
+  background-position: 1.4rem 50%;
+}
+
+#email {
+  background: url('./assets/at.svg') no-repeat;
+  background-position: 1.4rem 50%;
+}
+
+textarea {
+  border: 1.5px solid var(--color-neutral-100);
+  border-radius: 1.6rem;
+  box-sizing: border-box;
+  height: 12.5rem;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+}
+
+button {
+  background: linear-gradient(145deg, var(--color-neutral-200), var(--color-neutral-100));
+  border: none;
+  border-radius: 1.6rem;
+  color: var(--color-white-100);
+  cursor: pointer;
+  font-size: 1.4rem;
+  height: 4.5rem;
+  width: 15rem;
+}
+
+.desktop-contact-cover {
+  display: none;
+}
+
+.footer-wrapper {
+  background: linear-gradient(145deg, var(--color-neutral-200), var(--color-neutral-100));
+  color: var(--color-white-100);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3.2rem 0;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 3.2rem 10rem 3.2rem;
+  }
+
+  header > img {
+    content: url('./assets/desktop-cover-img.png');
+  }
+
+  h1 {
+    font-size: 5.8rem;
+  }
+
+  .heading-wrapper > p {
+    font-size: 3.2rem;
+  }
+
+  .heading-wrapper {
+    align-items: start;
+    justify-content: center;
+    height: 732px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading-wrapper > a {
+    justify-self: end !important;
+    position: absolute;
+    top: 59.3rem;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 5.4rem 3.2rem;
+  }
+
+  .card {
+    margin: 0;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    gap: 9rem;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .desktop-contact-cover {
+    display: initial;
+  }
+
+  footer {
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
